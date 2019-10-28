@@ -23,3 +23,5 @@ resource "aws_s3_bucket" "asdojl" {
   acl    = "private"
 }
 
+
+

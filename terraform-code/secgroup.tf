@@ -16,4 +16,10 @@ resource "aws_security_group" "crypto" {
      protocol    = "TCP"
      cidr_blocks = ["0.0.0.0/0"]
     }
+  ingress {
+     from_port   = 80
+     to_port     = 80 # All outbound traffic
+     protocol    = "TCP"
+     cidr_blocks = ["0.0.0.0/0"]
+    }
 }

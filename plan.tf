@@ -5,7 +5,7 @@ provider "aws" {
 
 resource "aws_instance" "asdojl" {
   ami           = "ami-02df9ea15c1778c9c"
-  instance_type = "t2.micro"
+  instance_type = "t1.micro"
   key_name = "ir1"
 
   tags = {

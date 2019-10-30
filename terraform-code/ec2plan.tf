@@ -9,14 +9,14 @@ resource "aws_instance" "asdojl" {
   key_name = "ir1"
 
   tags = {
-    Name = "asdojl"
+    Name = "asdojl2"
   }
 }
 
-resource "aws_eip" "asdojl" {
-  vpc      = true
-  instance = aws_instance.asdojl.id
-}
+//resource "aws_eip" "asdojl" {
+//  vpc      = true
+//  instance = aws_instance.asdojl.id
+//}
 
 resource "aws_s3_bucket" "asdojl" {
   bucket = "tfasdojl"
